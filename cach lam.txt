@@ -1,0 +1,45 @@
+ 1.controleer 
+ const db = require("../models/db");
+
+ render ra file
+
+ 2.danh mục router:
+ const express = require("express");
+const router = express.Router();
+const blogController = require("../controllers/blogs.controller");
+
+router.get("/", blogController.getAllBlogs);
+
+router.put("/", blogController.updateBlogs);
+
+module.exports = router;
+
+3. Danh mục app
+let blogRouter = require("./routers/blogs.routes")
+// Auth router
+
+
+
+Hiện data ở file ejs ở phần render: data = {rows}
+
+ảnh phá layout thì css cha nó và ảnh nó
+
+bắt đầu tạo từ app
+app.use("/blogs", blogRouter);
+xong inport router
+
+let blogRouter = require("./routers/blogs.routes")
+
+==> sang router tạo blog router
+copy user sang blog
+
+đăng nhập ko vào trang chủ đc  (redirect)
+app.get("/", requireAuth, (req, res) => {
+  res.redirect("/users");
+});
+
+
+
+làm upload bài viết mới
+nav upload điều hướng sang trang upload...>> có form 
+thư viện multer

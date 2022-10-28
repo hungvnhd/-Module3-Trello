@@ -1,0 +1,20 @@
+spl: CRUD API 
+liên kết database
+CRUD với SQL
+ controller goi từ moder điều hướng 
+
+chạy app,js 
+bẻ ra folrouter : 
+controller lấy dữ liệu từ db 
+gọi từ view 
+điều hướng giữa các luồng app 
+
+moder tương tác với data 
+
+get render ra giao diện 
+post : thêm mới người dùng gọi đến controller. createusers
+
+router gọi logic bên controller ra requite nó ra.
+controller lấy dữ liệu từ db ra
+modoer có db lấy dữ liệu từ SQL
+app gọi thư viện ra 
